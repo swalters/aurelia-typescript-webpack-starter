@@ -1,7 +1,35 @@
 <template>
+  <require from="materialize-css/materialize.css"></require>
   <h1>Home page</h1>
   <input type="text" placeholder="Type your text here..." value.bind="message">
   <br />
   <br />
   <div>${message}</div>
+  <button md-button i18n="clickButton" click.delegate="buttonClicked()"></button>
+  <button md-button i18n="dialogButton" click.delegate="dialogButtonClicked()"></button>
+
+
+  <div class="row">
+    Default:
+    <ul md-tabs class="z-depth-1">
+      <li md-waves="color: primary;"><a class="active" href="#tab_1">Tab 1</a></li>
+      <li md-waves="color: primary;"><a href="#tab_2">Tab 2</a></li>
+    </ul>
+  </div>
+  <div id="tab_1" class="tab-content z-depth-1">
+    <p>
+      This is tab 1
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi augue, sodales eget felis quis, fringilla luctus ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed in quam a velit ultricies suscipit eu sed arcu. Duis dapibus sodales est, a semper augue laoreet et. Quisque tristique molestie odio in pulvinar. Aliquam eget enim vitae felis varius varius at ut nisl.
+    </p>
+  </div>
+  <div id="tab_2" class="tab-content z-depth-1">
+    <p>
+      This is tab 2
+    </p>
+    <p>
+      Nunc quis lectus elementum, venenatis est eget, blandit dui. Vivamus fermentum nulla interdum massa blandit rhoncus. Ut dui libero, sollicitudin et gravida id, ultricies eu nunc. Nunc nisi sem, facilisis sed mauris et, pharetra tincidunt orci. Cras molestie, arcu ac venenatis fringilla, nulla dui laoreet magna, sit amet blandit diam tellus et nisl. Nunc a augue aliquam, tristique justo vel, efficitur metus. Nullam faucibus blandit tincidunt.
+    </p>
+  </div>
 </template>

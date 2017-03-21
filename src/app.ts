@@ -13,6 +13,6 @@ export class App implements ConfiguresRouter {
             moduleId: './pages/home',
             nav: true,
             title: 'Home'
-        }).mapUnknownRoutes('./pages/not-found');
+        });
     }
 }

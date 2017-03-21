@@ -1,0 +1,14 @@
+<template>
+  <ai-dialog>
+    <ai-dialog-body>
+      <h3>${message}</h3>
+    </ai-dialog-body>
+
+    <ai-dialog-footer>
+      <button md-button i18n="no" click.trigger="controller.cancel()">No</button>
+      <button md-button i18n="yes" class="primary" click.trigger="controller.ok(message)">Yes</button>
+    </ai-dialog-footer>
+
+  </ai-dialog>
+
+</template>
